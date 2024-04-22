@@ -1,0 +1,134 @@
+@import url("./fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --color-primary-dark: rgb(35, 72, 148);
+  --color-primary-light: #afcedd;
+
+  --color-secondary-dark: rgb(30, 30, 30);
+  --color-secondary-light: rgb(105, 105, 105);
+
+  --bg-btn: #219f95;
+
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+
+  --text-sm: 12px;
+}
+
+body,
+* {
+  font-family: Vazirmatn;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  padding: 5rem;
+}
+
+.content {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.content-item {
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.content-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.content-item-header span {
+  color: var(--color-secondary-light);
+  font-size: var(--text-sm);
+}
+
+.content-item-header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-item-header__title span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  border-radius: var(--border-radius-md);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content-item-header__title p {
+  color: var(--color-primary-dark);
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.content-item-body p {
+  font-size: 2rem;
+}
+
+.content-item-body span {
+  color: var(--color-secondary-light);
+  font-size: var(--text-sm);
+}
+
+.content-item-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.content-item-footer__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-item-footer__user img {
+  border-radius: var(--border-radius-lg);
+  width: 40px;
+  height: 40px;
+}
+
+.content-item-footer__user p {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.content-item-footer button {
+  outline: none;
+  appearance: none;
+  border: none;
+  background-color: var(--bg-btn);
+  color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+}
+
+
